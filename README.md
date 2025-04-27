@@ -21,6 +21,7 @@
 `NeuralNet_Training.ipynb` # ნერვული ქსელის ტრეინინგი 
 `LogisticRegression_Training.ipynb` # ლოგისტიკური რეგრესიის ტრეინინგი 
 `LightGBM_Training.ipynb` # LightGBM მოდელის ტრეინინგი
+`model_inference.ipynb` # საბოლოო შერჩეული მოდელის პრედიქშენი
 
 
 ---
@@ -66,7 +67,7 @@
   
 **საბოლოო მოდელის შერჩევა:**
 - LightGBM და XGBoost აჩვენეს საუკეთესო ROC AUC მეტრიკა.
-- LightGBM შეირჩა საბოლოო მოდელად უკეთესი შედეგის, მარტივობისა და სწრაფი ტრენინგის გამო.
+- XGBoost შეირჩა საბოლოო მოდელად უკეთესი შედეგის, მარტივობისა და სწრაფი ტრენინგის გამო.
 
 ---
 
@@ -80,6 +81,5 @@
 - გამოყენებული პარამეტრები (`learning_rate`, `num_leaves`, `bagging_fraction`, და სხვ.)
 
 **საუკეთესო მოდელის შედეგები:**
-- ✅ LightGBM: `val_auc ≈ 0.85`
-- ყველა მოდელი ლოგირებულია `mlflow.lightgbm.log_model(model, "model")` მეთოდით.
+- ✅ XGBoost: `val_auc ≈ 0.81`
 
